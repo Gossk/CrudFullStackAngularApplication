@@ -10,16 +10,20 @@ El proyecto continúa sentando las bases para la construcción de una **API REST
 
 ## Tecnologías
 
-- Java
+- Java 17
 - Spring Boot
 - Spring Initializr
 - Spring Data JPA
+- Spring Web (REST)
 - MySQL
 - Maven
+- Postman
 
 ## Estado del proyecto
 
-🚧 **En desarrollo** – Implementación de repositorios y servicios (capa de persistencia y negocio)
+🚧 **En desarrollo** – Implementación y prueba de endpoints REST
+
+---
 
 ## Funcionalidades implementadas
 
@@ -28,6 +32,8 @@ El proyecto continúa sentando las bases para la construcción de una **API REST
 - Definición de entidades con anotaciones JPA
 - Creación de **Repositorios** con Spring Data JPA
 - Implementación de **Servicios** para la lógica de negocio
+- Creación de **endpoints REST (CRUD)**
+- Pruebas de endpoints utilizando **Postman**
 
 ## Próximas integraciones
 
@@ -35,7 +41,3 @@ El proyecto continúa sentando las bases para la construcción de una **API REST
 - Manejo de excepciones y validaciones
 - Integración con frontend en Angular
 - Pruebas y documentación de la API
-
----
-
-📌 *Proyecto desarrollado como práctica de arquitectura Full Stack utilizando Spring Boot y Angular.*
