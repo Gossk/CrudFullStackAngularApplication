@@ -27,4 +27,10 @@ public class CustomerController {
     public Customer findById(@PathVariable Integer id){
         return customerService.findById(id);
     }
+    //localhost:8080
+    @DeleteMapping("/{id}")
+    public void deleteById(@PathVariable Integer id){
+        customerService.deleteById(id);
+    }
+
 }
