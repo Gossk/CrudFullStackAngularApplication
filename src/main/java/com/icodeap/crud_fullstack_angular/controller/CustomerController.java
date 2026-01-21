@@ -32,5 +32,14 @@ public class CustomerController {
     public void deleteById(@PathVariable Integer id){
         customerService.deleteById(id);
     }
+    //localhost:8080
+    @PutMapping
+    public Customer updateCustomer(@RequestBody Customer customer){
+        Customer customerDb = customerService.findById(customer.getId());
+        customerDb.setFirstName(customer.getFirstName());
+        customerDb.setLastName(customer.getLastName());
+        customerDb.setEmail(customer.getEmail());
+        return customerService.update(customerDb);
+    }
 
 }
