@@ -1,5 +1,4 @@
 # CRUD Full Stack – Spring Boot & Angular
-## Parte 4: Creación de Repositorio y Servicio
 
 ## Descripción
 
@@ -32,12 +31,6 @@ El proyecto continúa sentando las bases para la construcción de una **API REST
 - Definición de entidades con anotaciones JPA
 - Creación de **Repositorios** con Spring Data JPA
 - Implementación de **Servicios** para la lógica de negocio
-- Creación de **endpoints REST (CRUD)**
 - Pruebas de endpoints utilizando **Postman**
-
-## Próximas integraciones
-
-- Implementación de endpoints REST (Controllers)
-- Manejo de excepciones y validaciones
-- Integración con frontend en Angular
-- Pruebas y documentación de la API
+- Definición de rutas base en controllers usando **@RequestMapping**
+- Implementación, mejora y organización de endpoints REST (CRUD)
