@@ -29,10 +29,11 @@ public class CustomerServiceImpl implements CustomerService{
     public Customer findById(Integer id) {
         Customer customer = customerRepository.findById(id).orElseThrow(
                 () ->{
-                    throw new ResourceNotFoundException("Customer not found with id " + id);
+                    throw new ResourceNotFoundException("Customer con id " + id + " no se encuentra");
                 }
         );
-        return customerRepository.findById(id).get();
+        //return customerRepository.findById(id).get();
+        return customer;
     }
 
     @Override
