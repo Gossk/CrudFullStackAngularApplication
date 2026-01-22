@@ -34,3 +34,4 @@ El proyecto continúa sentando las bases para la construcción de una **API REST
 - Pruebas de endpoints utilizando **Postman**
 - Definición de rutas base en controllers usando **@RequestMapping**
 - Implementación, mejora y organización de endpoints REST (CRUD)
+- Implementación de manejo de excepciones al buscar entidades en la base de datos.
