@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Listado de Customers</h2>
+  <a class="btn btn-primary" [routerLink]="['/customers/add']">Crear Customer</a>
+
+  <table class="table mt-3">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Email</th>
+        <th>Eliminar</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of customers()">
+        <th>{{ c.id }}</th>
+        <td>{{ c.firstName }}</td>
+        <td>{{ c.lastName }}</td>
+        <td>{{ c.email }}</td>
+        <td> 
+          <button *ngIf="c.id !== undefined" class="btn btn-danger" (click)="deleteCustomer(c.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

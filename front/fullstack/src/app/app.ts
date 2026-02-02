@@ -1,0 +1,15 @@
+import { HttpClientModule } from '@angular/common/http';
+import { Component, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { RouterModule, RouterOutlet, Routes } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet , HttpClientModule, FormsModule],
+  templateUrl: './app.html',
+  styleUrls: ['./app.css']
+})
+export class App {
+  protected readonly title = signal('fullstack');
+}
